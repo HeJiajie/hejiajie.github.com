@@ -9,9 +9,6 @@ Feel free to use contents in this project, for
 ps: a link back to http://github.com/HeJiajie/hejiajie.github.com would be highly appreciated.
 
 
-https://github.com/dhulihan/hooligan.git
-
-
 Jekyll-Bootstrap
 ================
 
