@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Latest Post
+title: 
 ---
 {% include JB/setup %}
 
