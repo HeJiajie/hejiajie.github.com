@@ -1,12 +1,14 @@
 ---
 layout: page
-title: 
+title: Recent Post 
 ---
 {% include JB/setup %}
 
-<div class="blog-index">
-{% assign post = site.posts.first %}
-{% assign content = post.content %}
-{% include jiajie/post_detail.html %}
-</div>
-
+<ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
