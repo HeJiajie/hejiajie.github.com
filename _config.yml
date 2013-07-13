@@ -9,13 +9,13 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jiajie's Personal blog
-tagline: Site Tagline
+title : Jiajies Garden
+tagline: 
 author :
-  name : Jiajie
+  name : hejiajie
   email : hejiajie.bupt@gmail.com
   github : HeJiajie
-  twitter : JessyBupt
+  twitter : 
   feedburner : jiajies
   # Whatever you specify for the linkedin option will be placed after `www.linkedin.com/in/`
   linkedin: jessyhjj

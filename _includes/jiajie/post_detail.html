@@ -1,0 +1,10 @@
+<h2 class="entry-title">
+<a href="{{ root_url }}{{ post.url }}">
+{% if post.title %}
+{{ post.title }}
+{% else %}
+Anonymous Post
+{% endif %}
+</a>
+</h2>
+<div class="entry-content">{{ content }}</div>

@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="span9">
+    <h2><a href="{{ page.url }}">{{ page.title }}</a></h2>
+    {{ content }}
+    <hr>
+    <div class="pagination btn-group">
+      {% if page.previous %}
+        <a class="btn prev" href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
+      {% else %}
+        <a class="btn disabled prev">&larr; Previous</a>
+      {% endif %}
+        <a class="btn" href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
+      {% if page.next %}
+        <a class="btn next" href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
+      {% else %}
+        <a class="btn next disabled">Next &rarr;</a>
+      {% endif %}
+    </div>
+  </div>
+  
+  <div class="span3">
+    <section>
+      <div class="date"><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Published</a> &raquo; <span>{{ page.date | date_to_string }}</span></div>
+      {% if page.category %}
+        <div class="category"><a href="{{ BASE_PATH }}{{ site.JB.categories_path }}">Category</a> &raquo; <span>{{ page.category }}</span></div>
+      {% endif %}
+      {% if page.tags %}
+        <div><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}">Tags</a> &raquo;
+          {% for tag in page.tags %} 
+    	    {{ tag }}
+          {% endfor %}
+        </div>
+      {% endif %}  
+    </section>
+    <hr>
+    <section>
+      {% include jiajie/sidebar.html %}
+    </section>      
+  </div>
+</div>
+
+<div id="disqus_container">
+    <a href="#" class="comment" onclick="return false;">Click to view Comments</a>
+    <div id="disqus_thread"></div>
+</div>
